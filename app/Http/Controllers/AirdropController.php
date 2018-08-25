@@ -14,7 +14,7 @@ class AirdropController extends Controller
      */
     public function index()
     {
-        return "TUDO ok";
+            return redirect()->route('airdrops.register');
     }
     /**
      * Show the form for creating a new resource.
