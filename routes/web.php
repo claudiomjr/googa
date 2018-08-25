@@ -19,6 +19,19 @@ Route::get('google', function () {
     return view('google');
 
 });
+Route::group(['prefix'=>'airdrops','as'=>'airdrops.'], function(){
+	Route::get('/',['as'=>'/','uses'=>'AirdropController@index']);
+	Route::get('/index',['as'=>'index','uses'=>'AirdropController@index']);
+	Route::get('register',['as'=>'register','uses'=>'AirdropController@register']);
+	Route::post('register',['as'=>'register','uses'=>'AirdropController@register']);
+  });
+
+// Route::group(['prefix'=>'airdrops','as'=>'airdrops.'],function(){
+// 	Route::get('/',['as'=>'/'],['uses'=>'AirdropController@index']);
+// 	Route::get('/index',['as'=>'index'],['uses'=>'AirdropController@index']);
+// 	Route::get('register',['as'=>'register'],['uses'=>'AirdropController@register']);
+// 	Route::post('register',['as'=>'register'],['uses'=>'AirdropController@register']);
+// });
 
 Route::get('auth/google', 'Auth\GoogleController@redirectToGoogle');
 

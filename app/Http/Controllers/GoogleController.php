@@ -26,9 +26,9 @@ class GoogleController extends Controller
     {
         try {
             $user = Socialite::driver('google')->user();
-            $create['name'] = $user->getName();
-            $create['email'] = $user->getEmail();
-            $create['google_id'] = $user->getId();
+            // $create['name'] = $user->getName();
+            // $create['email'] = $user->getEmail();
+            // $create['google_id'] = $user->getId();
 
 
             $userModel = new User;

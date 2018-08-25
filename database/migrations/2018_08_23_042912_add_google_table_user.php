@@ -11,12 +11,17 @@ class AddGoogleTableUser extends Migration
      *
      * @return void
      */
-    public function up()
-    {
-        Schema::table("users", function (Blueprint $table) {
-            $table->string('google_id');
-        });
-    }
+    public function up(){}
+    // {
+    //     Schema::table("users", function (Blueprint $table) {
+    //         $table->string('google_id');
+    //         $table->string('twitter_profile');
+    //         $table->string('telegram_profile');
+    //         $table->string('medium_profile');
+    //         $table->string('bitcoin_profile');
+    //         $table->string('eth_profile');
+    //     });
+    //}
 
     /**
      * Reverse the migrations.
