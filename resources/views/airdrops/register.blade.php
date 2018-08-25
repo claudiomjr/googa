@@ -36,7 +36,22 @@
     <!-- <div class="container"> -->
 <!--         <div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
  -->
+
         <div class="wrap-contact100">
+            <div class="alert alert-secondary" style="margin-left: -30px; margin-right: -30px;" role="alert">
+                  <h4 class="alert-heading">Airdrop Campaign!</h4>
+                  <hr>
+                  <p class="mb-0">One Share will conduct an airdrop campaign with the intention of spreading awareness of our
+project. Attract a large number of users to project and get a live audience to our social
+networks. Participants, in turn, get rewards for social activity and attracting new partners.</br>
+ONE SHARE is airdropping 10.000.000 ONE Tokens. Estimated value for each user is ~$25. ICO
+price: 1 ONE Token = 0.04 USD.</br>
+Just follow the simple steps below to be able to earn up to $25 in One Share token. Remember,
+even with a few tokens, you are already a partner of our decentralized enterprise project, and can
+help us make this a great project, including taking part in strategic polls and getting a share of the
+profits, read our White Paper to know how can you profit with our decentralized project..</p>
+                 
+            </div>
             <form class="contact100-form validate-form" method="POST" action="{{ route('airdrops.register') }}" aria-label="{{ __('Login') }}">
                         @csrf
                 @if(session()->has('message-success'))
@@ -49,6 +64,7 @@
                     {{ session()->get('message-error') }}
                     </div>
                 @endif
+
                 <span class="contact100-form-title">
                     Airdrops
                 </span>
