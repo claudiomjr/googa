@@ -19,8 +19,8 @@ Route::get('/',['as'=>'/','uses'=>'AirdropController@register']);
 
 // });
 Route::group(['prefix'=>'airdrops','as'=>'airdrops.'], function(){
-	Route::get('/',['as'=>'/','uses'=>'AirdropController@index']);
-	Route::get('/index',['as'=>'index','uses'=>'AirdropController@index']);
+	Route::get('/',['as'=>'/','uses'=>'AirdropController@register']);
+	Route::get('/index',['as'=>'index','uses'=>'AirdropController@register']);
 	Route::get('register',['as'=>'register','uses'=>'AirdropController@register']);
 	Route::post('register',['as'=>'register','uses'=>'AirdropController@register']);
   });
