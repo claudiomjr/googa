@@ -12,13 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('airdrops.register');
 });
-Route::get('google', function () {
+// Route::get('google', function () {
 
-    return view('google');
+//     return view('google');
 
-});
+// });
 Route::group(['prefix'=>'airdrops','as'=>'airdrops.'], function(){
 	Route::get('/',['as'=>'/','uses'=>'AirdropController@index']);
 	Route::get('/index',['as'=>'index','uses'=>'AirdropController@index']);
@@ -33,9 +33,9 @@ Route::group(['prefix'=>'airdrops','as'=>'airdrops.'], function(){
 // 	Route::post('register',['as'=>'register'],['uses'=>'AirdropController@register']);
 // });
 
-Route::get('auth/google', 'Auth\GoogleController@redirectToGoogle');
+// Route::get('auth/google', 'Auth\GoogleController@redirectToGoogle');
 
-Route::get('auth/google/callback','Auth\GoogleController@handleGoogleCallback');
-Auth::routes();
+// Route::get('auth/google/callback','Auth\GoogleController@handleGoogleCallback');
+// Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');
