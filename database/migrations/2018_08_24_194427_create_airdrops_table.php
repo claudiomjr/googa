@@ -15,7 +15,7 @@ class CreateAirdropsTable extends Migration
     {
         Schema::create('airdrops', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('fullname');
+            // $table->string('fullname');
             $table->string('email')->unique();
             $table->string('twitter_profile')->nullable();
             $table->string('telegram_profile')->nullable();

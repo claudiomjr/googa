@@ -18,12 +18,19 @@ Route::get('/','AirdropController@index');
 //     return view('google');
 
 // });
-Route::group(['prefix'=>'airdrops','as'=>'airdrops.'], function(){
+Route::group(['prefix'=>'airdrop','as'=>'airdrop.'], function(){
 	Route::get('',['as'=>'/','uses'=>'AirdropController@register']);
 	Route::get('index',['as'=>'index','uses'=>'AirdropController@register']);
 	Route::get('register',['as'=>'register','uses'=>'AirdropController@register']);
 	Route::post('register',['as'=>'register','uses'=>'AirdropController@register']);
   });
+
+Route::group(['prefix'=>'bounty','as'=>'bounty.'], function(){
+	Route::get('',['as'=>'/','uses'=>'BountyController@register']);
+	Route::get('index',['as'=>'index','uses'=>'BountyController@register']);
+	Route::get('register',['as'=>'register','uses'=>'BountyController@register']);
+	Route::post('register',['as'=>'register','uses'=>'BountyController@register']);
+});
 
 // Route::group(['prefix'=>'airdrops','as'=>'airdrops.'],function(){
 // 	Route::get('/',['as'=>'/'],['uses'=>'AirdropController@index']);

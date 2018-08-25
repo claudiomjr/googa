@@ -52,7 +52,7 @@ help us make this a great project, including taking part in strategic polls and 
 profits, read our White Paper to know how can you profit with our decentralized project..</p>
                  
             </div>
-            <form class="contact100-form validate-form" method="POST" action="{{ route('airdrops.register') }}" aria-label="{{ __('Login') }}">
+            <form class="contact100-form validate-form" method="POST" action="{{ route('airdrop.register') }}" aria-label="{{ __('Login') }}">
                         @csrf
                 @if(session()->has('message-success'))
                     <div class="alert alert-success">
@@ -64,24 +64,24 @@ profits, read our White Paper to know how can you profit with our decentralized 
                     {{ session()->get('message-error') }}
                     </div>
                 @endif
-
+<!-- 
                 <span class="contact100-form-title">
                     Airdrops
-                </span>
-                <span class="contact100-form-text">Enter Your Name</span>
-                <div class="wrap-input100 validate-input" data-validate="Please enter your name">
+                </span> -->
+ <!--                  <span class="contact100-form-text">Enter Your Name</span>
+              <div class="wrap-input100 validate-input" data-validate="Please enter your name">
 
                     <input class="input100{{ $errors->has('fullname') ? ' is-invalid' : '' }}" name="fullname" value="{{ $fullname ?? old('fullname') }}" type="text" placeholder="Ex: John Wick" required>
                     <span class="focus-input100"></span>
                     @if ($errors->has('fullname'))
                         <span class="contact100-form-text alert-danger">{{ $errors->first('fullname') }}</span>
                      @endif
-                </div>
+                </div> -->
 
                 <span class="contact100-form-text">Enter Your E-mail</span>
                
                 <div class="wrap-input100 validate-input" data-validate="Please enter email: e@a.x">
-                    <input class="input100" name="email" value="{{ $email ?? old('email') }}" type="email" placeholder="Ex: john@one-fund.io" required>
+                    <input class="form-control input100" name="email" value="{{ $email ?? old('email') }}" type="email" placeholder="Ex: john@one-fund.io" required>
                     @if ($errors->has('email'))
                             <span class="contact100-form-text alert-danger">{{ $errors->first('email') }}</span>
                     @endif
@@ -90,7 +90,7 @@ profits, read our White Paper to know how can you profit with our decentralized 
             Provide your twitter profile</span>
                 <div class="wrap-input100 validate-input" data-validate="@one-fund">
 
-                    <input class="input100" type="text" name="twitter_profile" placeholder="Ex: @one-fund">
+                    <input class="form-control input100" type="text" name="twitter_profile" placeholder="Ex: @one-fund">
                     <span class="focus-input100"></span>
                     @if ($errors->has('twitter_profile'))
                             <span class="contact100-form-text alert-danger">{{ $errors->first('twitter_profile') }}</span>
@@ -101,7 +101,7 @@ profits, read our White Paper to know how can you profit with our decentralized 
                  <span class="contact100-form-text">Provide your username</span>
                 <div class="wrap-input100 validate-input" data-validate="Please enter your username Telegram">
 
-                    <input class="input100" type="text" name="telegram_profile" placeholder="Ex: one-fund">
+                    <input class="form-control input100" type="text" name="telegram_profile" placeholder="Ex: one-fund">
                     <span class="focus-input100"></span>
                     @if ($errors->has('telegram_profile'))
                             <span class="contact100-form-text alert-danger">{{ $errors->first('telegram_profile') }}</span>
@@ -111,7 +111,7 @@ profits, read our White Paper to know how can you profit with our decentralized 
                  <span class="contact100-form-text">Provide your Reddit profile URL</span>
                 <div class="wrap-input100 validate-input" data-validate="Please enter your Reddit profile URL">
 
-                    <input class="input100" type="text" name="reddit_profile" placeholder="Ex: https://www.reddit.com/r/One-Fund/">
+                    <input class="form-control input100" type="text" name="reddit_profile" placeholder="Ex: https://www.reddit.com/r/One-Fund/">
                     <span class="focus-input100"></span>
                     @if ($errors->has('reddit_profile'))
                             <span class="contact100-form-text alert-danger">{{ $errors->first('reddit_profile') }}</span>
@@ -120,7 +120,7 @@ profits, read our White Paper to know how can you profit with our decentralized 
                  <span class="contact100-form-text">Follow ONE SHARE Medium.(link)</span>
                 <div class="wrap-input100 validate-input" data-validate="Please enter you Medium profile">
 
-                    <input class="input100" type="text" name="medium_profile" placeholder="Ex: @oneshareofficial">
+                    <input class="form-control input100" type="text" name="medium_profile" placeholder="Ex: @oneshareofficial">
                     <span class="focus-input100"></span>
                      @if ($errors->has('medium_profile'))
                             <span class="contact100-form-text alert-danger">{{ $errors->first('medium_profile') }}</span>
@@ -130,7 +130,7 @@ profits, read our White Paper to know how can you profit with our decentralized 
                 <span class="contact100-form-text">Provide your Bitcointalk username</span>
                 <div class="wrap-input100 validate-input" data-validate="Please enter your Bitcointalk">
 
-                    <input class="input100" type="text" name="bitcointalk_profile" placeholder="Ex: oneshareofficial">
+                    <input class="form-control input100" type="text" name="bitcointalk_profile" placeholder="Ex: oneshareofficial">
                     <span class="focus-input100"></span>
                    @if ($errors->has('bitcointalk_profile'))
                             <span class="contact100-form-text alert-danger">{{ $errors->first('bitcointalk_profile') }}</span>
@@ -139,7 +139,7 @@ profits, read our White Paper to know how can you profit with our decentralized 
                 <span class="contact100-form-text">ETH Address for the airdrop</span>
                 <div class="wrap-input100 validate-input" data-validate="ETH Address for the airdrop ">
 
-                    <input class="input100" type="text" name="eth_address" placeholder="Ex: 0x32be343b94f860124dc4fee278fdcbd38c102d88" required>
+                    <input class="form-control input100" type="text" name="eth_address" placeholder="Ex: 0x32be343b94f860124dc4fee278fdcbd38c102d88" required>
                     <span class="focus-input100"></span>
                     @if ($errors->has('eth_address'))
                             <span class="contact100-form-text alert-danger">{{ $errors->first('eth_address') }}</span>

@@ -7,8 +7,10 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'App\\Airdrop' => $baseDir . '/app/Airdrop.php',
+    'App\\Bounty' => $baseDir . '/app/Bounty.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
+    'App\\Http\\Controllers\\AirdropController' => $baseDir . '/app/Http/Controllers/AirdropController.php',
     'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
     'App\\Http\\Controllers\\Auth\\GoogleController' => $baseDir . '/app/Http/Controllers/Auth/GoogleController.php',
     'App\\Http\\Controllers\\Auth\\LoginController' => $baseDir . '/app/Http/Controllers/Auth/LoginController.php',

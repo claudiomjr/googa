@@ -356,8 +356,10 @@ class ComposerStaticInit12d5d1558f1a886cca6a365008df439a
 
     public static $classMap = array (
         'App\\Airdrop' => __DIR__ . '/../..' . '/app/Airdrop.php',
+        'App\\Bounty' => __DIR__ . '/../..' . '/app/Bounty.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Http\\Controllers\\AirdropController' => __DIR__ . '/../..' . '/app/Http/Controllers/AirdropController.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'App\\Http\\Controllers\\Auth\\GoogleController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/GoogleController.php',
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',

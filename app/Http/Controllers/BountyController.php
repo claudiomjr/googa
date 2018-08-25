@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Airdrop;
+use App\Bounty;
 use Illuminate\Http\Request;
 
-class AirdropController extends Controller
+class BountyController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class AirdropController extends Controller
      */
     public function index()
     {
-            return redirect()->route('airdrop.register');
+            return redirect()->route('bounty.register');
     }
     /**
      * Show the form for creating a new resource.
@@ -24,17 +24,13 @@ class AirdropController extends Controller
     public function register(Request $request)
     {
         if ($request->isMethod('get')) {
-            return view('airdrop.register');
+            return view('bounty.register');
         }
 
         $validatedData = $request->validate([
             // 'fullname' => 'required|max:255',
-            'email' => 'required|string|email|max:255|unique:airdrops',
-            'twitter_profile' => 'max:255',
-            'telegram_profile' => 'max:255',
-            'reddit_profile' => 'max:255',
-            'medium_profile' => 'max:255',
-            'bitcointalk_profile' => 'max:255',
+            'email' => 'required|string|email|max:255',
+            'work_link' => 'max:255',
             'eth_address' => 'max:255',
          ]);
 
@@ -51,21 +47,18 @@ class AirdropController extends Controller
     public function create(Request $request){   
         // Airdrop::create('')
         try{
-            $airdrop = new Airdrop;
+            $bounty = new Bounty;
             // $airdrop->fullname = $request->fullname;
-            $airdrop->email = $request->email;
-            $airdrop->twitter_profile = $request->twitter_profile;
-            $airdrop->telegram_profile = $request->telegram_profile;
-            $airdrop->reddit_profile = $request->reddit_profile;
-            $airdrop->medium_profile = $request->medium_profile;
-            $airdrop->bitcointalk_profile = $request->bitcointalk_profile;
-            $airdrop->eth_address = $request->eth_address;
-            $airdrop->save();  
+            $bounty->email = $request->email;
+            $bounty->work_link = $request->work_link;
+            $bounty->eth_address = $request->eth_address;
+            $bounty->save();  
             return true; 
         }catch(Exception $e){
             return false;
         }
     }
+
 
     /**
      * Store a newly created resource in storage.
@@ -81,10 +74,10 @@ class AirdropController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Airdrop  $airdrop
+     * @param  \App\Bounty  $bounty
      * @return \Illuminate\Http\Response
      */
-    public function show(Airdrop $airdrop)
+    public function show(Bounty $bounty)
     {
         //
     }
@@ -92,10 +85,10 @@ class AirdropController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Airdrop  $airdrop
+     * @param  \App\Bounty  $bounty
      * @return \Illuminate\Http\Response
      */
-    public function edit(Airdrop $airdrop)
+    public function edit(Bounty $bounty)
     {
         //
     }
@@ -104,10 +97,10 @@ class AirdropController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Airdrop  $airdrop
+     * @param  \App\Bounty  $bounty
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Airdrop $airdrop)
+    public function update(Request $request, Bounty $bounty)
     {
         //
     }
@@ -115,10 +108,10 @@ class AirdropController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Airdrop  $airdrop
+     * @param  \App\Bounty  $bounty
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Airdrop $airdrop)
+    public function destroy(Bounty $bounty)
     {
         //
     }

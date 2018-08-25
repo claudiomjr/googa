@@ -4,10 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Airdrop extends Model
+class Bounty extends Model
 {
-
-
+    
     /**
      * The attributes that are mass assignable.
      *
@@ -15,7 +14,6 @@ class Airdrop extends Model
      */
     protected $fillable = [
         // 'fullname', 
-        'email', 'twitter_profile','telegram_profile','reddit_profile','medium_profile','bitcointalk_profile','eth_address',
+        'email', 'work_link','eth_address',
     ];
-
 }
