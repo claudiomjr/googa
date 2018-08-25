@@ -37,6 +37,7 @@ class AirdropController extends Controller
             'bitcointalk_profile' => 'max:255',
             'eth_address' => 'max:255',
          ]);
+        
         $success = $this->create($request);
         if($success)
             return redirect()->back()->with('message-success', "Let's process your request.");

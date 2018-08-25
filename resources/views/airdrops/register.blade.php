@@ -50,29 +50,24 @@
                     </div>
                 @endif
                 <span class="contact100-form-title">
-                    Airdrop
+                    Airdrops
                 </span>
                 <span class="contact100-form-text">Enter Your Name</span>
                 <div class="wrap-input100 validate-input" data-validate="Please enter your name">
 
-                    <input class="input100" type="text" name="fullname" placeholder="Ex: John Wick" required>
+                    <input class="input100{{ $errors->has('fullname') ? ' is-invalid' : '' }}" name="fullname" value="{{ $fullname ?? old('fullname') }}" type="text" placeholder="Ex: John Wick" required>
                     <span class="focus-input100"></span>
                     @if ($errors->has('fullname'))
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $errors->first('fullname') }}</strong>
-                        </span>
-                    @endif
+                        <span class="contact100-form-text alert-danger">{{ $errors->first('fullname') }}</span>
+                     @endif
                 </div>
 
                 <span class="contact100-form-text">Enter Your E-mail</span>
+               
                 <div class="wrap-input100 validate-input" data-validate="Please enter email: e@a.x">
-
-                    <input class="input100" type="email" name="email" placeholder="Ex: john@one-fund.io" required>
-                    <span class="focus-input100"></span>
+                    <input class="input100" name="email" value="{{ $email ?? old('email') }}" type="email" placeholder="Ex: john@one-fund.io" required>
                     @if ($errors->has('email'))
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $errors->first('email') }}</strong>
-                        </span>
+                            <span class="contact100-form-text alert-danger">{{ $errors->first('email') }}</span>
                     @endif
                 </div>
                 <span class="contact100-form-text">Follow ONE SHARE Twitter + Retweet this tweet</span><span class="contact100-form-text">
@@ -82,9 +77,7 @@
                     <input class="input100" type="text" name="twitter_profile" placeholder="Ex: @one-fund">
                     <span class="focus-input100"></span>
                     @if ($errors->has('twitter_profile'))
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $errors->first('twitter_profile') }}</strong>
-                        </span>
+                            <span class="contact100-form-text alert-danger">{{ $errors->first('twitter_profile') }}</span>
                     @endif
                 </div>
 
@@ -95,9 +88,7 @@
                     <input class="input100" type="text" name="telegram_profile" placeholder="Ex: one-fund">
                     <span class="focus-input100"></span>
                     @if ($errors->has('telegram_profile'))
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $errors->first('telegram_profile') }}</strong>
-                        </span>
+                            <span class="contact100-form-text alert-danger">{{ $errors->first('telegram_profile') }}</span>
                     @endif
                 </div>
                 <span class="contact100-form-text">Subscribe to ONE SHARE Reddit (link) + Upvote one post</span>
@@ -107,9 +98,7 @@
                     <input class="input100" type="text" name="reddit_profile" placeholder="Ex: https://www.reddit.com/r/One-Fund/">
                     <span class="focus-input100"></span>
                     @if ($errors->has('reddit_profile'))
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $errors->first('reddit_profile') }}</strong>
-                        </span>
+                            <span class="contact100-form-text alert-danger">{{ $errors->first('reddit_profile') }}</span>
                     @endif
                 </div>
                  <span class="contact100-form-text">Follow ONE SHARE Medium.(link)</span>
@@ -117,10 +106,8 @@
 
                     <input class="input100" type="text" name="medium_profile" placeholder="Ex: @oneshareofficial">
                     <span class="focus-input100"></span>
-                    @if ($errors->has('medium_profile'))
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $errors->first('medium_profile') }}</strong>
-                        </span>
+                     @if ($errors->has('medium_profile'))
+                            <span class="contact100-form-text alert-danger">{{ $errors->first('medium_profile') }}</span>
                     @endif
                 </div>
                 <span class="contact100-form-text">Coment ONE SHARE Bitcointalk thread (link)</span>
@@ -129,10 +116,8 @@
 
                     <input class="input100" type="text" name="bitcointalk_profile" placeholder="Ex: oneshareofficial">
                     <span class="focus-input100"></span>
-                    @if ($errors->has('bitcointalk_profile'))
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $errors->first('bitcointalk_profile') }}</strong>
-                        </span>
+                   @if ($errors->has('bitcointalk_profile'))
+                            <span class="contact100-form-text alert-danger">{{ $errors->first('bitcointalk_profile') }}</span>
                     @endif
                 </div>
                 <span class="contact100-form-text">ETH Address for the airdrop</span>
@@ -141,9 +126,7 @@
                     <input class="input100" type="text" name="eth_address" placeholder="Ex: 0x32be343b94f860124dc4fee278fdcbd38c102d88" required>
                     <span class="focus-input100"></span>
                     @if ($errors->has('eth_address'))
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $errors->first('eth_address') }}</strong>
-                        </span>
+                            <span class="contact100-form-text alert-danger">{{ $errors->first('eth_address') }}</span>
                     @endif
                 </div>
 
