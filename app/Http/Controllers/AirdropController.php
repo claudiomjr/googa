@@ -24,7 +24,7 @@ class AirdropController extends Controller
     public function register(Request $request)
     {
         if ($request->isMethod('get')) {
-            return view('airdrops/register');
+            return view('airdrops.register');
         }
 
         $validatedData = $request->validate([
@@ -37,7 +37,7 @@ class AirdropController extends Controller
             'bitcointalk_profile' => 'max:255',
             'eth_address' => 'max:255',
          ]);
-        
+
         $success = $this->create($request);
         if($success)
             return redirect()->back()->with('message-success', "Let's process your request.");

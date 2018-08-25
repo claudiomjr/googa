@@ -11,9 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('airdrops.register');
-});
+
+Route::get('/',['as'=>'/','uses'=>'AirdropController@register']);
 // Route::get('google', function () {
 
 //     return view('google');
