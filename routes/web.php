@@ -12,7 +12,7 @@
 */
 
 
-Route::get('/',['as'=>'/','uses'=>'AirdropController@index']);
+Route::get('/','AirdropController@index');
 // Route::get('google', function () {
 
 //     return view('google');
