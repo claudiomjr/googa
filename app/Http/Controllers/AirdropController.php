@@ -39,10 +39,8 @@ class AirdropController extends Controller
          ]);
         $success = $this->create($request);
         if($success)
-            return redirect()->back()->with('message', 'IT WORKS!');
-
-        if($success)
-            return redirect()->back()->with('message', 'NOT WORKS!');
+            return redirect()->back()->with('message-success', "Let's process your request.");
+        return redirect()->back()->with('message-error', 'Try again!');
     }
     /**
      * Show the form for creating a new resource.
