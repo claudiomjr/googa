@@ -1,4 +1,5 @@
-
+@extends('layouts._app')
+@section('content')
 
 <!DOCTYPE html>
 <html lang="en">
@@ -195,3 +196,4 @@ profits, read our White Paper to know how can you profit with our decentralized 
 
 </body>
 </html>
+@endsection

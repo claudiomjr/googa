@@ -1,4 +1,5 @@
-
+@extends('layouts._app')
+@section('content')
 
 <!DOCTYPE html>
 <html lang="en">
@@ -162,3 +163,4 @@ recommendation, can be rewarded separately.</p></br></span>
 
 </body>
 </html>
+@endsection
