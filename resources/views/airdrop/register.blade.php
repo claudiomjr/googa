@@ -87,8 +87,8 @@ profits, read our White Paper to know how can you profit with our decentralized 
                             <span class="contact100-form-text alert-danger">{{ $errors->first('email') }}</span>
                     @endif
                 </div>
-                <span class="contact100-form-text">Follow ONE SHARE Twitter + Retweet this tweet</span><span class="contact100-form-text">
-            Provide your twitter profile</span>
+                <span class="contact100-form-text">Follow us on Twitter <a href="https://twitter.com/OneshareO" target="_blank">(LINK)</a> + Retweet any of our tweets.</span><span class="contact100-form-text">
+            Provide your Twitter username</span>
                 <div class="wrap-input100 validate-input" data-validate="@one-fund">
 
                     <input class="form-control input100" type="text" name="twitter_profile" placeholder="Ex: @one-fund">
@@ -98,27 +98,28 @@ profits, read our White Paper to know how can you profit with our decentralized 
                     @endif
                 </div>
 
-                <span class="contact100-form-text">Join ONE SHARE Telegram chat (link)</span>
+                <span class="contact100-form-text">Join ONE SHARE Telegram chat <a href="https://t.me/joinchat/FAwWX0ZEfxqvrhAtMpJmLw"> (LINK) </a></span>
                  <span class="contact100-form-text">Provide your username</span>
                 <div class="wrap-input100 validate-input" data-validate="Please enter your username Telegram">
 
-                    <input class="form-control input100" type="text" name="telegram_profile" placeholder="Ex: one-fund">
+                    <input class="form-control input100" type="text" name="telegram_profile" placeholder="Ex: @yourprofile">
                     <span class="focus-input100"></span>
                     @if ($errors->has('telegram_profile'))
                             <span class="contact100-form-text alert-danger">{{ $errors->first('telegram_profile') }}</span>
                     @endif
                 </div>
-                <span class="contact100-form-text">Subscribe to ONE SHARE Reddit (link) + Upvote one post</span>
+                <span class="contact100-form-text">Subscribe to ONE SHARE Reddit <a href="https://www.reddit.com/user/one_share"> (LINK)</a> + Upvote one post</span>
                  <span class="contact100-form-text">Provide your Reddit profile URL</span>
                 <div class="wrap-input100 validate-input" data-validate="Please enter your Reddit profile URL">
 
-                    <input class="form-control input100" type="text" name="reddit_profile" placeholder="Ex: https://www.reddit.com/r/One-Fund/">
+                    <input class="form-control input100" type="text" name="reddit_profile" placeholder="Ex: https://www.reddit.com/user/username">
                     <span class="focus-input100"></span>
                     @if ($errors->has('reddit_profile'))
                             <span class="contact100-form-text alert-danger">{{ $errors->first('reddit_profile') }}</span>
                     @endif
                 </div>
-                 <span class="contact100-form-text">Follow ONE SHARE Medium.(link)</span>
+                 <span class="contact100-form-text">Follow ONE SHARE on Medium.<a href="https://medium.com/@oneshareofficial"> (LINK)</a> </span>                    
+                 <span class="contact100-form-text">Provide your Medium profile</span>
                 <div class="wrap-input100 validate-input" data-validate="Please enter you Medium profile">
 
                     <input class="form-control input100" type="text" name="medium_profile" placeholder="Ex: @oneshareofficial">
@@ -127,7 +128,7 @@ profits, read our White Paper to know how can you profit with our decentralized 
                             <span class="contact100-form-text alert-danger">{{ $errors->first('medium_profile') }}</span>
                     @endif
                 </div>
-                <span class="contact100-form-text">Coment ONE SHARE Bitcointalk thread (link)</span>
+                <span class="contact100-form-text">Coment the ONE SHARE Bitcointalk thread <a href="https://bitcointalk.org/index.php?action=profile;u=2340013;sa=summary"> (LINK) </a></span>
                 <span class="contact100-form-text">Provide your Bitcointalk username</span>
                 <div class="wrap-input100 validate-input" data-validate="Please enter your Bitcointalk">
 
@@ -138,6 +139,7 @@ profits, read our White Paper to know how can you profit with our decentralized 
                     @endif
                 </div>
                 <span class="contact100-form-text">ETH Address for the airdrop</span>
+                <span ><i style="color: red">It must be from a private wallet - not from exchange address</i></span>
                 <div class="wrap-input100 validate-input" data-validate="ETH Address for the airdrop ">
 
                     <input class="form-control input100" type="text" name="eth_address" placeholder="Ex: 0x32be343b94f860124dc4fee278fdcbd38c102d88" required>
@@ -154,9 +156,9 @@ profits, read our White Paper to know how can you profit with our decentralized 
                 </div>
             </form>
 
-            <!-- <div class="contact100-more">
-                 <span class="contact100-more-highlight">one-fund.io</span>
-            </div> -->
+            <div class="contact100">
+                 <span>Any question related to airdrop, reply your thread in One Forum <a href="https://forum.one-fund.io/viewforum.php?f=13" target="_blank">(LINK)</a></span>
+            </div>
         </div>
     </div>
 

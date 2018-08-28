@@ -141,7 +141,7 @@ iframe {
   padding: 25px;
   padding-bottom: 55px;
   position: relative;
-  z-index: -1;
+  z-index: 0;
 }
 
 .container-contact100::before {

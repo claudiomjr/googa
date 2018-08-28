@@ -81,18 +81,27 @@ our project, amounts of your followers, quality of the platform used.</p>
                 <span class="contact100-form-text">Submit the link of your work:</span>
                
                 <div class="wrap-input100 validate-input" data-validate="">
-                    <input class="form-control input100" name="work_link" value="{{ $work_link ?? old('work_link') }}" type="text" placeholder="Ex: " required>
+                    <input class="form-control input100" name="work_link" value="{{ $work_link ?? old('work_link') }}" type="text" placeholder="Ex: https://twitter.com/OneshareO/status/1032910065068593152" required>
                     @if ($errors->has('work_link'))
                             <span class="contact100-form-text alert-danger">{{ $errors->first('work_link') }}</span>
                     @endif
                 </div>
+                <div class="alert alert-info" role="alert" style="font-size: 16px">
+                    <p class="text-primary" style="font-size: 16px; text-align: justify;
+    text-justify: inter-word;">You may participate more than once for this campaign:</br>
+                    Example:
+                    You are a big influence on twitter - one of the favorite platform of crypto investors, and has
+                    many followers - each tweet that comments on our project or makes an investment
+                    recommendation, can be rewarded separately.
+                </div>
+<!-- 
                 <span class="text-info">
                     <p class="text-info">You may participate more than once for this campaign:</p>
 
 <p class="text-info">Example:</p>
 <p class="text-info">You are a big influence on twitter - one of the favorite platform of crypto investors, and has
 many followers - each tweet that comments on our project or makes an investment
-recommendation, can be rewarded separately.</p></br></span>
+recommendation, can be rewarded separately.</p></br></span> -->
                 
                  <span class="contact100-form-text">Enter Your E-mail</span>
                
@@ -103,7 +112,8 @@ recommendation, can be rewarded separately.</p></br></span>
                     @endif
                 </div>
 
-                <span class="contact100-form-text">ETH Address for the airdrop</span>
+                <span class="contact100-form-text">ETH Address for the Bounty reward</span>
+                <span ><i style="color: red">It must be from a private wallet - not from exchange address</i></span>
                 <div class="wrap-input100 validate-input" data-validate="ETH Address for the airdrop ">
 
                     <input class="form-control input100" type="text" name="eth_address" placeholder="Ex: 0x32be343b94f860124dc4fee278fdcbd38c102d88" required>
@@ -112,13 +122,10 @@ recommendation, can be rewarded separately.</p></br></span>
                             <span class="contact100-form-text alert-danger">{{ $errors->first('eth_address') }}</span>
                     @endif
                 </div>
-
-
-                <div class="container-contact100-form-btn">
-                    <button class="contact100-form-btn">
-                       Submit
-                    </button>
-                </div>
+                
+            <div class="contact100">
+                 <span>Any question related to airdrop, reply your thread in One Forum <a href="https://forum.one-fund.io/viewforum.php?f=13" target="_blank">(LINK)</a></span>
+            </div>
             </form>
 
             <!-- <div class="contact100-more">
