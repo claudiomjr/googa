@@ -42,15 +42,16 @@
             <div class="alert alert-secondary" style="margin-left: -30px; margin-right: -30px;" role="alert">
                   <h4 class="alert-heading">Airdrop Campaign!</h4>
                   <hr>
-                  <p class="mb-0">One Share will conduct an airdrop campaign with the intention of spreading awareness of our
-project. Attract a large number of users to project and get a live audience to our social
-networks. Participants, in turn, get rewards for social activity and attracting new partners.</br>
+                  <p class="text-secondary" style="font-size: 16px; text-align: justify;
+    text-justify: inter-word;">One Share will conduct an airdrop campaign with the intention of spreading awareness of our
+project, attract a large number of users to project and get a live audience to our social
+networks. Participants, in turn, get rewards for social activity and attracting new partners.</br></br>
 ONE SHARE is airdropping 10.000.000 ONE Tokens. Estimated value for each user is ~$25. ICO
-price: 1 ONE Token = 0.04 USD.</br>
+price: 1 ONE Token = 0.04 USD.</br></br>
 Just follow the simple steps below to be able to earn up to $25 in One Share token. Remember,
 even with a few tokens, you are already a partner of our decentralized enterprise project, and can
 help us make this a great project, including taking part in strategic polls and getting a share of the
-profits, read our White Paper to know how can you profit with our decentralized project..</p>
+profits, read our White Paper to know how can you profit with our decentralized project.</p>
                  
             </div>
             <form class="contact100-form validate-form" method="POST" action="{{ route('airdrop.register') }}" aria-label="{{ __('Login') }}">
@@ -79,7 +80,7 @@ profits, read our White Paper to know how can you profit with our decentralized 
                      @endif
                 </div> -->
 
-                <span class="contact100-form-text">Enter Your E-mail</span>
+                <span class="contact100-form-text"><h6>Enter Your E-mail</h6></span>
                
                 <div class="wrap-input100 validate-input" data-validate="Please enter email: e@a.x">
                     <input class="form-control input100" name="email" value="{{ $email ?? old('email') }}" type="email" placeholder="Ex: john@one-fund.io" required>
@@ -87,8 +88,8 @@ profits, read our White Paper to know how can you profit with our decentralized 
                             <span class="contact100-form-text alert-danger">{{ $errors->first('email') }}</span>
                     @endif
                 </div>
-                <span class="contact100-form-text">Follow us on Twitter <a href="https://twitter.com/OneshareO" target="_blank">(LINK)</a> + Retweet any of our tweets.</span><span class="contact100-form-text">
-            Provide your Twitter username</span>
+                <span class="contact100-form-text"><h6>Follow us on Twitter <a href="https://twitter.com/OneshareO" target="_blank">(LINK)</a> + Retweet any of our tweets.</h6></span><span class="contact100-form-text"><h6>
+            Provide your Twitter username</h6></span>
                 <div class="wrap-input100 validate-input" data-validate="@one-fund">
 
                     <input class="form-control input100" type="text" name="twitter_profile" placeholder="Ex: @one-fund">
@@ -98,8 +99,8 @@ profits, read our White Paper to know how can you profit with our decentralized 
                     @endif
                 </div>
 
-                <span class="contact100-form-text">Join ONE SHARE Telegram chat <a href="https://t.me/joinchat/FAwWX0ZEfxqvrhAtMpJmLw"> (LINK) </a></span>
-                 <span class="contact100-form-text">Provide your username</span>
+                <span class="contact100-form-text"><h6>Join ONE SHARE Telegram chat <a href="https://t.me/joinchat/FAwWX0ZEfxqvrhAtMpJmLw"> (LINK) </a></h6></span>
+                 <span class="contact100-form-text"><h6>Provide your username</h6></span>
                 <div class="wrap-input100 validate-input" data-validate="Please enter your username Telegram">
 
                     <input class="form-control input100" type="text" name="telegram_profile" placeholder="Ex: @yourprofile">
@@ -108,8 +109,8 @@ profits, read our White Paper to know how can you profit with our decentralized 
                             <span class="contact100-form-text alert-danger">{{ $errors->first('telegram_profile') }}</span>
                     @endif
                 </div>
-                <span class="contact100-form-text">Subscribe to ONE SHARE Reddit <a href="https://www.reddit.com/user/one_share"> (LINK)</a> + Upvote one post</span>
-                 <span class="contact100-form-text">Provide your Reddit profile URL</span>
+                <span class="contact100-form-text"><h6>Subscribe to ONE SHARE Reddit <a href="https://www.reddit.com/user/one_share"> (LINK)</a> + Upvote one post</h6></span>
+                 <span class="contact100-form-text"><h6>Provide your Reddit profile URL</h6></span>
                 <div class="wrap-input100 validate-input" data-validate="Please enter your Reddit profile URL">
 
                     <input class="form-control input100" type="text" name="reddit_profile" placeholder="Ex: https://www.reddit.com/user/username">
@@ -118,8 +119,8 @@ profits, read our White Paper to know how can you profit with our decentralized 
                             <span class="contact100-form-text alert-danger">{{ $errors->first('reddit_profile') }}</span>
                     @endif
                 </div>
-                 <span class="contact100-form-text">Follow ONE SHARE on Medium.<a href="https://medium.com/@oneshareofficial"> (LINK)</a> </span>                    
-                 <span class="contact100-form-text">Provide your Medium profile</span>
+                 <span class="contact100-form-text"><h6>Follow ONE SHARE on Medium.<a href="https://medium.com/@oneshareofficial"> (LINK)</a> </h6></span>                    
+                 <span class="contact100-form-text"><h6>Provide your Medium profile</h6></span>
                 <div class="wrap-input100 validate-input" data-validate="Please enter you Medium profile">
 
                     <input class="form-control input100" type="text" name="medium_profile" placeholder="Ex: @oneshareofficial">
@@ -128,8 +129,8 @@ profits, read our White Paper to know how can you profit with our decentralized 
                             <span class="contact100-form-text alert-danger">{{ $errors->first('medium_profile') }}</span>
                     @endif
                 </div>
-                <span class="contact100-form-text">Coment the ONE SHARE Bitcointalk thread <a href="https://bitcointalk.org/index.php?action=profile;u=2340013;sa=summary"> (LINK) </a></span>
-                <span class="contact100-form-text">Provide your Bitcointalk username</span>
+                <span class="contact100-form-text"><h6>Coment the ONE SHARE Bitcointalk thread <a href="https://bitcointalk.org/index.php?action=profile;u=2340013;sa=summary"> (LINK) </a></h6></span>
+                <span class="contact100-form-text"><h6>Provide your Bitcointalk username</h6></span>
                 <div class="wrap-input100 validate-input" data-validate="Please enter your Bitcointalk">
 
                     <input class="form-control input100" type="text" name="bitcointalk_profile" placeholder="Ex: oneshareofficial">
@@ -138,8 +139,8 @@ profits, read our White Paper to know how can you profit with our decentralized 
                             <span class="contact100-form-text alert-danger">{{ $errors->first('bitcointalk_profile') }}</span>
                     @endif
                 </div>
-                <span class="contact100-form-text">ETH Address for the airdrop</span>
-                <span ><i style="color: red">It must be from a private wallet - not from exchange address</i></span>
+                <span class="contact100-form-text"><h6>ETH Address for the airdrop</h6></span>
+                <span ><i style="color: red"><h6>It must be from a private wallet - not from exchange address</h6></i></span>
                 <div class="wrap-input100 validate-input" data-validate="ETH Address for the airdrop ">
 
                     <input class="form-control input100" type="text" name="eth_address" placeholder="Ex: 0x32be343b94f860124dc4fee278fdcbd38c102d88" required>

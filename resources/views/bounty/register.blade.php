@@ -42,7 +42,8 @@
             <div class="alert alert-secondary" style="margin-left: -30px; margin-right: -30px;" role="alert">
                   <h4 class="alert-heading">Bounty campaign!</h4>
                   <hr>
-                  <p class="mb-0">The ONE SHARE bounty campaign will distribute 5,000,000 ONE Tokens. Estimated value for each
+                  <p class="text-secondary" style="font-size: 16px; text-align: justify;
+    text-justify: inter-word;">The ONE SHARE bounty campaign will distribute 5,000,000 ONE Tokens. Estimated value for each
 user is between $ 150 to $ 5000. ICO price: 1 ONE Token = 0.04 USD</br>
 The campaign aims for influencers and media attention for our project. To be eligible to
 participate, write a positive editorial, news, analysis, recommendation, tweet, post, video, on
@@ -122,7 +123,7 @@ recommendation, can be rewarded separately.</p></br></span> -->
                             <span class="contact100-form-text alert-danger">{{ $errors->first('eth_address') }}</span>
                     @endif
                 </div>
-                
+
             <div class="contact100">
                  <span>Any question related to airdrop, reply your thread in One Forum <a href="https://forum.one-fund.io/viewforum.php?f=13" target="_blank">(LINK)</a></span>
             </div>

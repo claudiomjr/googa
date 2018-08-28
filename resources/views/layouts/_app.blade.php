@@ -46,7 +46,7 @@ background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, F
         <nav class="navbar navbar-expand-md navbar-white bg-white navbar-laravel">
             <div class="container">
                 <a class="navbar-brand" href="https://one-fund.io" target="_blank">
-                    {{ config('app.name', 'One Share') }}
+                    <img src=""/>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
