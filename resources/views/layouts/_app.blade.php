@@ -46,20 +46,39 @@ background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, F
         <nav class="navbar navbar-expand-md navbar-white bg-white navbar-laravel">
             <div class="container">
                 <a class="navbar-brand" href="https://one-fund.io" target="_blank">
-                    <img src=""/>
+
+                    <img src="https://one-fund.io/wp-content/uploads/2018/08/2.png" width="150" />
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+               <!--  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
-                </button>
+                </button> -->
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
+                    <ul class="navbar-nav ml-auto">
                      <!--    <li class="nav-item">
                             <a class="nav-link" target="_blank" href="https://one-fund.io/">ICO Site</a>
                         </li> -->
                        <li class="nav-item">
-                            <a class="nav-link" target="_blank" href="https://forum.one-fund.io/">One Forum</a>
+                            <a class="nav-link" target="_blank" href="https://one-fund.io/"><h6>Home</h6></a>
+                        </li>
+                       <li class="nav-item">
+                            <a class="nav-link" target="_blank" href="https://one-fund.io/#advantages"><h6>Advantages</h6></a>
+                        </li>
+                       <li class="nav-item">
+                            <a class="nav-link" target="_blank" href="https://one-fund.io/#crowdsale"><h6>Token Distibuition</h6></a>
+                        </li>
+                       <li class="nav-item">
+                            <a class="nav-link" target="_blank" href="https://campaign.one-fund.io/bounty"><h6>Bounty</h6></a>
+                        </li>
+                       <li class="nav-item">
+                            <a class="nav-link" target="_blank" href="https://campaign.one-fund.io/airdrop"><h6>Airdrop</h6></a>
+                        </li>
+                       <li class="nav-item">
+                            <a class="nav-link" target="_blank" href="https://painel.one-fund.io/register"><h6>Whitelist</h6></a>
+                        </li>
+                       <li class="nav-item">
+                            <a class="nav-link" target="_blank" href="https://forum.one-fund.io/"><h6>Forum</h6></a>
                         </li>
                     </ul>
 
