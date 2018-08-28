@@ -99,7 +99,7 @@ profits, read our White Paper to know how can you profit with our decentralized 
                     @endif
                 </div>
 
-                <span class="contact100-form-text"><h6>Join ONE SHARE Telegram chat <a href="https://t.me/joinchat/FAwWX0ZEfxqvrhAtMpJmLw"> (LINK) </a></h6></span>
+                <span class="contact100-form-text"><h6>Join ONE SHARE Telegram chat <a href="https://t.me/joinchat/FAwWX0ZEfxqvrhAtMpJmLw" target="_blank"> (LINK) </a></h6></span>
                  <span class="contact100-form-text"><h6>Provide your username</h6></span>
                 <div class="wrap-input100 validate-input" data-validate="Please enter your username Telegram">
 
@@ -109,7 +109,7 @@ profits, read our White Paper to know how can you profit with our decentralized 
                             <span class="contact100-form-text alert-danger">{{ $errors->first('telegram_profile') }}</span>
                     @endif
                 </div>
-                <span class="contact100-form-text"><h6>Subscribe to ONE SHARE Reddit <a href="https://www.reddit.com/user/one_share"> (LINK)</a> + Upvote one post</h6></span>
+                <span class="contact100-form-text"><h6>Subscribe to ONE SHARE Reddit <a href="https://www.reddit.com/user/one_share" target="_blank"> (LINK)</a> + Upvote one post</h6></span>
                  <span class="contact100-form-text"><h6>Provide your Reddit profile URL</h6></span>
                 <div class="wrap-input100 validate-input" data-validate="Please enter your Reddit profile URL">
 
@@ -119,7 +119,7 @@ profits, read our White Paper to know how can you profit with our decentralized 
                             <span class="contact100-form-text alert-danger">{{ $errors->first('reddit_profile') }}</span>
                     @endif
                 </div>
-                 <span class="contact100-form-text"><h6>Follow ONE SHARE on Medium.<a href="https://medium.com/@oneshareofficial"> (LINK)</a> </h6></span>                    
+                 <span class="contact100-form-text"><h6>Follow ONE SHARE on Medium.<a href="https://medium.com/@oneshareofficial" target="_blank"> (LINK)</a> </h6></span>                    
                  <span class="contact100-form-text"><h6>Provide your Medium profile</h6></span>
                 <div class="wrap-input100 validate-input" data-validate="Please enter you Medium profile">
 
@@ -129,7 +129,7 @@ profits, read our White Paper to know how can you profit with our decentralized 
                             <span class="contact100-form-text alert-danger">{{ $errors->first('medium_profile') }}</span>
                     @endif
                 </div>
-                <span class="contact100-form-text"><h6>Coment the ONE SHARE Bitcointalk thread <a href="https://bitcointalk.org/index.php?action=profile;u=2340013;sa=summary"> (LINK) </a></h6></span>
+                <span class="contact100-form-text"><h6>Coment the ONE SHARE Bitcointalk thread <a href="https://bitcointalk.org/index.php?action=profile;u=2340013;sa=summary" target="_blank"> (LINK) </a></h6></span>
                 <span class="contact100-form-text"><h6>Provide your Bitcointalk username</h6></span>
                 <div class="wrap-input100 validate-input" data-validate="Please enter your Bitcointalk">
 

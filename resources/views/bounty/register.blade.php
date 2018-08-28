@@ -39,15 +39,15 @@
  -->
 
         <div class="wrap-contact100">
-            <div class="alert alert-secondary" style="margin-left: -30px; margin-right: -30px;" role="alert">
+            <div class="alert alert-secondary" role="alert" style="font-size: 16px; margin-left: -30px; margin-right: -30px;" role="alert">
                   <h4 class="alert-heading">Bounty campaign!</h4>
                   <hr>
-                  <p class="text-secondary" style="font-size: 16px; text-align: justify;
+                    <p class="text-secondary" style="font-size: 16px; text-align: justify;
     text-justify: inter-word;">The ONE SHARE bounty campaign will distribute 5,000,000 ONE Tokens. Estimated value for each
-user is between $ 150 to $ 5000. ICO price: 1 ONE Token = 0.04 USD</br>
+user is between $ 150 to $ 5000. ICO price: 1 ONE Token = 0.04 USD</br></br>
 The campaign aims for influencers and media attention for our project. To be eligible to
 participate, write a positive editorial, news, analysis, recommendation, tweet, post, video, on
-social media or cryptocurrencies news channels. All news dissemination platforms can be used.</br>
+social media or cryptocurrencies news channels. All news dissemination platforms can be used.</br></br>
 The distribution of the ONE SHARE Tokens for each participant will depend on some factors that
 will be observed: Quantity of visualization, quantity of users interactions, quality of the analysis of
 our project, amounts of your followers, quality of the platform used.</p>
@@ -79,7 +79,7 @@ our project, amounts of your followers, quality of the platform used.</p>
                      @endif
                 </div> -->
 
-                <span class="contact100-form-text">Submit the link of your work:</span>
+                <span class="contact100-form-text"><h6>Submit the link of your work:</h6></span>
                
                 <div class="wrap-input100 validate-input" data-validate="">
                     <input class="form-control input100" name="work_link" value="{{ $work_link ?? old('work_link') }}" type="text" placeholder="Ex: https://twitter.com/OneshareO/status/1032910065068593152" required>
@@ -88,12 +88,12 @@ our project, amounts of your followers, quality of the platform used.</p>
                     @endif
                 </div>
                 <div class="alert alert-info" role="alert" style="font-size: 16px">
-                    <p class="text-primary" style="font-size: 16px; text-align: justify;
+                    <p class="text-secondary" style="font-size: 16px; text-align: justify;
     text-justify: inter-word;">You may participate more than once for this campaign:</br>
                     Example:
                     You are a big influence on twitter - one of the favorite platform of crypto investors, and has
                     many followers - each tweet that comments on our project or makes an investment
-                    recommendation, can be rewarded separately.
+                    recommendation, can be rewarded separately.</p>
                 </div>
 <!-- 
                 <span class="text-info">
@@ -104,7 +104,7 @@ our project, amounts of your followers, quality of the platform used.</p>
 many followers - each tweet that comments on our project or makes an investment
 recommendation, can be rewarded separately.</p></br></span> -->
                 
-                 <span class="contact100-form-text">Enter Your E-mail</span>
+                 <span class="contact100-form-text"><h6>Enter Your E-mail</h6></span>
                
                 <div class="wrap-input100 validate-input" data-validate="Please enter email: e@a.x">
                     <input class="form-control input100" name="email" value="{{ $email ?? old('email') }}" type="email" placeholder="Ex: john@one-fund.io" required>
@@ -113,8 +113,7 @@ recommendation, can be rewarded separately.</p></br></span> -->
                     @endif
                 </div>
 
-                <span class="contact100-form-text">ETH Address for the Bounty reward</span>
-                <span ><i style="color: red">It must be from a private wallet - not from exchange address</i></span>
+                <span class="contact100-form-text"><h6>ETH Address for the Bounty reward</h6></span>
                 <div class="wrap-input100 validate-input" data-validate="ETH Address for the airdrop ">
 
                     <input class="form-control input100" type="text" name="eth_address" placeholder="Ex: 0x32be343b94f860124dc4fee278fdcbd38c102d88" required>
@@ -124,11 +123,16 @@ recommendation, can be rewarded separately.</p></br></span> -->
                     @endif
                 </div>
 
+
+                <div class="container-contact100-form-btn">
+                    <button class="contact100-form-btn">
+                       Submit
+                    </button>
+                </div>
+            </form>
             <div class="contact100">
                  <span>Any question related to airdrop, reply your thread in One Forum <a href="https://forum.one-fund.io/viewforum.php?f=13" target="_blank">(LINK)</a></span>
             </div>
-            </form>
-
             <!-- <div class="contact100-more">
                  <span class="contact100-more-highlight">one-fund.io</span>
             </div> -->
