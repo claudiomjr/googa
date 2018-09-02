@@ -129,7 +129,7 @@ profits, read our White Paper to know how can you profit with our decentralized 
                             <span class="contact100-form-text alert-danger">{{ $errors->first('medium_profile') }}</span>
                     @endif
                 </div>
-                <span class="contact100-form-text"><h6>Coment the ONE SHARE Bitcointalk thread <a href="https://bitcointalk.org/index.php?action=profile;u=2340013;sa=summary" target="_blank"> (LINK) </a></h6></span>
+               <!--  <span class="contact100-form-text"><h6>Coment the ONE SHARE Bitcointalk thread <a href="https://bitcointalk.org/index.php?action=profile;u=2340013;sa=summary" target="_blank"> (LINK) </a></h6></span>
                 <span class="contact100-form-text"><h6>Provide your Bitcointalk username</h6></span>
                 <div class="wrap-input100 validate-input" data-validate="Please enter your Bitcointalk">
 
@@ -138,7 +138,7 @@ profits, read our White Paper to know how can you profit with our decentralized 
                    @if ($errors->has('bitcointalk_profile'))
                             <span class="contact100-form-text alert-danger">{{ $errors->first('bitcointalk_profile') }}</span>
                     @endif
-                </div>
+                </div> -->
                 <span class="contact100-form-text"><h6>ETH Address for the airdrop</h6></span>
                 <span ><i style="color: red"><h6>It must be from a private wallet - not from exchange address</h6></i></span>
                 <div class="wrap-input100 validate-input" data-validate="ETH Address for the airdrop ">
